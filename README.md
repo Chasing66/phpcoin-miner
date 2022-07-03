@@ -1,0 +1,1 @@
+# phpcoine-miner
