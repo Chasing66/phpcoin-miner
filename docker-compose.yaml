@@ -1,7 +1,7 @@
 version: '3.9'
 services:
-  test:
-    container_name: phpcoin
+  phpcoin-miner:
+    container_name: phpcoin-miner
     image: enwaiax/phpcoin-miner:beta
     network_mode: "host"
     restart: unless-stopped
