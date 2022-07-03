@@ -1,0 +1,16 @@
+version: '3.9'
+services:
+  test:
+    container_name: phpcoin
+    image: enwaiax/phpcoin-miner:beta
+    network_mode: "host"
+    restart: unless-stopped
+    environment:
+      - MINER_SERVER_ADDRESS=https://global.phpcoin.cc/
+      - WALLET_ADDRESS=PkAfVwA5Vr8TjN29uYw7tba6QdetLH4fNA
+      - CPU_USAGE=80
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+        max-file: "1"
