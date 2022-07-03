@@ -9,7 +9,7 @@ docker and docker-compose are installed.
 
 1. Download the docker-compose.yml file from [GitHub](https://raw.githubusercontent.com/Chasing66/phpcoin-miner/main/docker-compose.yml)
    ```
-    curl -L https://raw.githubusercontent.com/Chasing66/phpcoin-miner/main/docker-compose.yml > docker-compose.yml
+    wget -O docker-compose.yml https://raw.githubusercontent.com/Chasing66/phpcoin-miner/main/docker-compose.yaml
    ```
 2. Edit the environment variables in the docker-compose.yml file, input your own values
 3. Run the following command to start the docker-compose:
