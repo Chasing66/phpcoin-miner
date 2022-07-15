@@ -12,7 +12,7 @@ pushd $working_dir
 if [ -f "docker-compose.yaml" ]; then
     rm -rf docker-compose.yaml
 fi
-wget -q https://raw.githubusercontent.com/Chasing66/phpcoin-miner/main/docker-compose.yml -O docker-compose.yaml
+wget -q https://raw.githubusercontent.com/Chasing66/phpcoin-miner/main/docker-compose.yaml -O docker-compose.yaml
 
 docker-compose pull 2>&1 >/dev/null
 docker-compose up -d
