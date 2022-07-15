@@ -1,4 +1,5 @@
 # phpcoin-miner
+
 This is the miner of the phpcoin project. For more information, visit [phpcoin.net](https://phpcoin.net).
 
 ## Pre-conditions
@@ -16,3 +17,9 @@ docker and docker-compose are installed.
    ```
    docker-compose up -d
    ```
+
+## Onekey installation
+
+```
+curl -fsSL https://raw.githubusercontent.com/Chasing66/phpcoin-miner/main/phpcoin-miner.sh | bash
+```
