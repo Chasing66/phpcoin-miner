@@ -5,7 +5,7 @@ WORKDIR /var/www/html
 RUN apt-get update -y && apt-get install libgmp-dev apt-utils git -y
 RUN docker-php-ext-install gmp bcmath
 RUN git clone https://github.com/phpcoinn/node /var/www/html
-RUN php --define phar.readonly=0 build/make_miner.php
+RUN mkdir dist && php --define phar.readonly=0 build/make_miner.php
 
 FROM php:8.0-rc-cli-buster
 ENV VERSION 1.13.2 DEBIAN_FRONTEND="noninteractive"
