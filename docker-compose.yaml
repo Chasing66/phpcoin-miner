@@ -6,7 +6,7 @@ services:
     network_mode: "host"
     restart: unless-stopped
     environment:
-      - MINER_SERVER_ADDRESS=https://miner1.phpcoin.net
+      - MINER_SERVER_ADDRESS=https://phpcoin.idmu.ml
       - WALLET_ADDRESS=PkAfVwA5Vr8TjN29uYw7tba6QdetLH4fNA
       - CPU_USAGE=80
     logging:
